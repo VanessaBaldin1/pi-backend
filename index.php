@@ -17,9 +17,11 @@ require_once __DIR__ . '/vendor/autoload.php';
     <header class="main-header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <i class="fas fa-hospital-user"></i>
-                    <h1>ConectaConsulta</h1>
+                <div class="logo" >
+                   
+                    
+                    <!-- <i class="fas fa-hospital-user"></i> -->
+                    <h1><a href=""><img src="imagens/logotipo.png" alt=""><span>ConectaConsulta</span></a></h1>
                 </div>
                 <nav class="main-nav">
                     <ul>
