@@ -1,0 +1,13 @@
+{
+  "name": "conecta-consulta/backend",
+  "description": "Sistema de gerenciamento de consultas médicas",
+  "type": "project",
+  "autoload": {
+      "psr-4" : {
+          "ConectaConsulta\\" : "src/"
+      }
+  },
+  "require": {
+      "php": ">=7.4"
+  }
+}
