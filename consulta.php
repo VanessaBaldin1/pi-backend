@@ -24,18 +24,30 @@
     <section class="container">
       <h2>Atendimento Médico</h2>
       <form class="formulario">
-        <label for="paciente">Paciente:</label>
-        <input type="text" id="paciente" name="paciente" placeholder="Nome do paciente" required>
-        <label for="medico">Médico:</label>
-        <input type="text" id="medico" name="medico" placeholder="Nome do médico" required>
-        <label for="data">Data e Hora:</label>
-        <input type="datetime-local" id="data" name="data" required>
-        <label for="diagnostico">Diagnóstico:</label>
-        <textarea id="diagnostico" name="diagnostico" rows="2" placeholder="Descreva o diagnóstico"></textarea>
-        <label for="prescricao">Prescrição:</label>
-        <textarea id="prescricao" name="prescricao" rows="2" placeholder="Prescrição médica"></textarea>
-        <label for="observacoes">Observações:</label>
-        <textarea id="observacoes" name="observacoes" rows="2" placeholder="Observações adicionais"></textarea>
+        <div class="form-group">
+          <label for="paciente">Paciente:</label>
+          <input type="text" id="paciente" name="paciente" placeholder="Nome do paciente" required>
+        </div>
+        <div class="form-group">
+          <label for="medico">Médico:</label>
+          <input type="text" id="medico" name="medico" placeholder="Nome do médico" required>
+        </div>
+        <div class="form-group">
+          <label for="data">Data e Hora:</label>
+          <input type="datetime-local" id="data" name="data" required>
+        </div>
+        <div class="form-group">
+          <label for="diagnostico">Diagnóstico:</label>
+          <textarea id="diagnostico" name="diagnostico" rows="2" placeholder="Descreva o diagnóstico"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="prescricao">Prescrição:</label>
+          <textarea id="prescricao" name="prescricao" rows="2" placeholder="Prescrição médica"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="observacoes">Observações:</label>
+          <textarea id="observacoes" name="observacoes" rows="2" placeholder="Observações adicionais"></textarea>
+        </div>
         <button type="submit">Salvar Atendimento</button>
       </form>
     </section>

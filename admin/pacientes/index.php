@@ -19,6 +19,11 @@ $pacientes = $pacienteServico->listar();
     <div class="container">
         <h1>Gerenciar Pacientes</h1>
         
+        <a href="../../index.php" class="btn-voltar">
+            <i class="fas fa-arrow-left"></i>
+            Voltar para o Início
+        </a>
+        
         <div class="actions">
             <a href="criar.php" class="btn btn-primary">Novo Paciente</a>
         </div>

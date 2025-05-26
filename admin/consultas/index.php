@@ -19,6 +19,11 @@ $consultas = $consultaServico->listar();
     <div class="container">
         <h1>Lista de Consultas</h1>
         
+        <a href="../../index.php" class="btn-voltar">
+            <i class="fas fa-arrow-left"></i>
+            Voltar para o Início
+        </a>
+        
         <div class="actions">
             <a href="criar.php" class="btn btn-primary">Nova Consulta</a>
         </div>

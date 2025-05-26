@@ -24,14 +24,22 @@
     <section class="container">
       <h2>Registro de Exame</h2>
       <form class="formulario">
-        <label for="paciente">Paciente:</label>
-        <input type="text" id="paciente" name="paciente" placeholder="Nome do paciente" required>
-        <label for="tipo">Tipo de Exame:</label>
-        <input type="text" id="tipo" name="tipo" placeholder="Ex: Hemograma, Raio-X" required>
-        <label for="data">Data do Exame:</label>
-        <input type="date" id="data" name="data" required>
-        <label for="resultado">Resultado:</label>
-        <textarea id="resultado" name="resultado" rows="2" placeholder="Resultado do exame"></textarea>
+        <div class="form-group">
+          <label for="paciente">Paciente:</label>
+          <input type="text" id="paciente" name="paciente" placeholder="Nome do paciente" required>
+        </div>
+        <div class="form-group">
+          <label for="tipo">Tipo de Exame:</label>
+          <input type="text" id="tipo" name="tipo" placeholder="Ex: Hemograma, Raio-X" required>
+        </div>
+        <div class="form-group">
+          <label for="data">Data do Exame:</label>
+          <input type="date" id="data" name="data" required>
+        </div>
+        <div class="form-group">
+          <label for="resultado">Resultado:</label>
+          <textarea id="resultado" name="resultado" rows="2" placeholder="Resultado do exame"></textarea>
+        </div>
         <button type="submit">Salvar Exame</button>
       </form>
     </section>

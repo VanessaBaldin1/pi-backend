@@ -24,23 +24,33 @@
     <section class="container">
       <h2>Cadastro de Médico</h2>
       <form class="formulario">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
-        <label for="crm">CRM:</label>
-        <input type="text" id="crm" name="crm" placeholder="CRM do médico" required>
-        <label for="especialidade">Especialidade:</label>
-        <select id="especialidade" name="especialidade" required>
-          <option value="">Selecione uma especialidade</option>
-          <option value="cardiologista">Cardiologista</option>
-          <option value="clinico_geral">Clínico Geral</option>
-          <option value="dermatologista">Dermatologista</option>
-          <option value="geriatra">Geriatra</option>
-          <option value="ortopedista">Ortopedista</option>
-        </select>
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="email@exemplo.com">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+        </div>
+        <div class="form-group">
+          <label for="crm">CRM:</label>
+          <input type="text" id="crm" name="crm" placeholder="CRM do médico" required>
+        </div>
+        <div class="form-group">
+          <label for="especialidade">Especialidade:</label>
+          <select id="especialidade" name="especialidade" required>
+            <option value="">Selecione uma especialidade</option>
+            <option value="cardiologista">Cardiologista</option>
+            <option value="clinico_geral">Clínico Geral</option>
+            <option value="dermatologista">Dermatologista</option>
+            <option value="geriatra">Geriatra</option>
+            <option value="ortopedista">Ortopedista</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="email@exemplo.com">
+        </div>
         <button type="submit">Salvar Médico</button>
       </form>
     </section>
