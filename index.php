@@ -21,7 +21,7 @@ require_once __DIR__ . '/vendor/autoload.php';
                    
                     
                     <!-- <i class="fas fa-hospital-user"></i> -->
-                    <h1><a href=""><img src="imagens/logotipo.png" alt=""><span>ConectaConsulta</span></a></h1>
+                    <h1><a href=""><img src="imagens/logotipo.png" alt=""><span>Conecta-Consulta</span></a></h1>
                 </div>
                 <nav class="main-nav">
                     <ul>
@@ -77,7 +77,7 @@ require_once __DIR__ . '/vendor/autoload.php';
                                     <h4>Gestão de Médicos</h4>
                                     <p>Controle sua equipe médica e especialidades</p>
                                     <ul class="feature-list">
-                                        <li><i class="fas fa-check"></i> Cadastro de profissionais</li>
+                                        <li><i class="fas fa-check"></i> Cadastro profissional</li>
                                         <li><i class="fas fa-check"></i> Especialidades</li>
                                         <li><i class="fas fa-check"></i> Agenda individual</li>
                                     </ul>

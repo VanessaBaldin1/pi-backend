@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <div class="form-actions">
                 <button type="submit" class="btn btn-primary">Salvar</button>
-                <a href="index.php" class="btn btn-secondary">Cancelar</a>
+                <a href="index.php" class="btn btn-danger">Cancelar</a>
             </div>
         </form>
     </div>
