@@ -39,7 +39,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <div class="container">
-        <h1>Novo Exame</h1>
+
+       
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h1>Novo Exame</h1>
+            <a href="index.php" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Voltar</a>
+        </div>
         
         <form method="POST" class="form">
             <div class="form-group">

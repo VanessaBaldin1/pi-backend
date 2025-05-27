@@ -21,7 +21,7 @@ require_once __DIR__ . '/vendor/autoload.php';
                    
                     
                     <!-- <i class="fas fa-hospital-user"></i> -->
-                    <h1><a href=""><img src="imagens/logotipo.png" alt=""><span>Conecta-Consulta</span></a></h1>
+                    <h1><a href=""><img src="imagens/logotipo.png" alt=""></a></h1>
                 </div>
                 <nav class="main-nav">
                     <ul>
