@@ -322,7 +322,7 @@ body {
 /* Buttons */
 .btn {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 0.4rem 1.5rem;
     border-radius: 4px;
     text-decoration: none;
     font-weight: 500;
@@ -358,8 +358,8 @@ body {
 .btn-voltar {
     background-color: #2196F3;
     color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
+    padding: 0.4rem 1.5rem;
+     border-radius: 4px;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -368,6 +368,14 @@ body {
     font-weight: 500;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+}
+
+.direcao{
+    display: flex;
+    gap: 8px;
+    justify-items: center;
+    margin-top: 10px;
+    margin: 10px;
 }
 
 .btn-voltar:hover {
@@ -995,7 +1003,7 @@ nav a:hover {
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 1.2rem;
+    padding: 1rem;
     font-size: 1.2rem;
     min-height: 50px;
     max-width: 100%;

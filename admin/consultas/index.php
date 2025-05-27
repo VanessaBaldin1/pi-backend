@@ -18,7 +18,7 @@ $consultas = $consultaServico->listar();
 <body>
     <div class="container">
         <h1>Lista de Consultas</h1>
-        
+       <div class="direcao">
         <a href="../../index.php" class="btn-voltar">
             <i class="fas fa-arrow-left"></i>
             Voltar para o Início
@@ -27,7 +27,7 @@ $consultas = $consultaServico->listar();
         <div class="actions">
             <a href="criar.php" class="btn btn-primary">Nova Consulta</a>
         </div>
-
+</div> 
         <table class="table">
             <thead>
                 <tr>

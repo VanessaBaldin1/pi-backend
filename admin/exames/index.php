@@ -18,7 +18,7 @@ $exames = $exameServico->listar();
 <body>
     <div class="container">
         <h1>Gerenciar Exames</h1>
-        
+        <div class="direcao">
         <a href="../../index.php" class="btn-voltar">
             <i class="fas fa-arrow-left"></i>
             Voltar para o Início
@@ -27,7 +27,7 @@ $exames = $exameServico->listar();
         <div class="actions">
             <a href="criar.php" class="btn btn-primary">Novo Exame</a>
         </div>
-
+        </div> 
         <table class="table">
             <thead>
                 <tr>
