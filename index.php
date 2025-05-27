@@ -15,7 +15,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 <body>
     <header class="main-header">
-        <div class="container">
+        <div class="container index">
             <div class="header-content">
                 <div class="logo" >
                    

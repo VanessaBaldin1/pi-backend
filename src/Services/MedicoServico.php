@@ -20,10 +20,24 @@ class MedicoServico {
     }
 
     public function criar($dados) {
+        // Verifica se já existe um médico com este CRM
+        $medicos = $this->model->listar();
+        foreach ($medicos as $medico) {
+            if ($medico['crm'] === $dados['crm']) {
+                throw new \Exception('Já existe um médico cadastrado com este CRM');
+            }
+        }
         return $this->model->criar($dados);
     }
 
     public function atualizar($id, $dados) {
+        // Verifica se já existe outro médico com este CRM
+        $medicos = $this->model->listar();
+        foreach ($medicos as $medico) {
+            if ($medico['crm'] === $dados['crm'] && $medico['id'] != $id) {
+                throw new \Exception('Já existe um médico cadastrado com este CRM');
+            }
+        }
         return $this->model->atualizar($id, $dados);
     }
 
