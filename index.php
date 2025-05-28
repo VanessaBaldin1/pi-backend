@@ -29,6 +29,7 @@ require_once __DIR__ . '/vendor/autoload.php';
                         <li><a href="admin/medicos"><i class="fas fa-user-md"></i> Médicos</a></li>
                         <li><a href="admin/consultas"><i class="fas fa-calendar-check"></i> Consultas</a></li>
                         <li><a href="admin/exames"><i class="fas fa-notes-medical"></i> Exames</a></li>
+                        <li><a href="admin/login.php"><i class="fas fa-sign-in-alt"></i> Login Admin</a></li>
                     </ul>
                 </nav>
             </div>

@@ -3,6 +3,7 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 
 use ConectaConsulta\Services\MedicoServico;
 
+$erro = null;
 $medicoServico = new MedicoServico();
 $id = $_GET['id'] ?? null;
 
@@ -27,9 +28,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'telefone' => $_POST['telefone']
     ];
 
-    if ($medicoServico->atualizar($id, $dados)) {
-        header('Location: index.php');
-        exit;
+    try {
+        if ($medicoServico->atualizar($id, $dados)) {
+            header('Location: index.php');
+            exit;
+        }
+    } catch (\Exception $e) {
+        $erro = $e->getMessage();
     }
 }
 ?>

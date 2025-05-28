@@ -1,4 +1,13 @@
 <?php
+// Iniciar a sessão
+session_start();
+
+// Lógica de verificação de sessão/login
+if (!isset($_SESSION['admin_logado'])) {
+    header('Location: ../login.php'); // Redirecionar para login na pasta acima
+    exit;
+}
+
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 use ConectaConsulta\Services\PacienteServico;

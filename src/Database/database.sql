@@ -54,4 +54,12 @@ CREATE TABLE IF NOT EXISTS exames (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (paciente_id) REFERENCES pacientes(id) ON DELETE CASCADE,
     FOREIGN KEY (medico_id) REFERENCES medicos(id) ON DELETE CASCADE
+);
+
+-- Tabela de administradores
+CREATE TABLE IF NOT EXISTS administradores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL, -- VARCHAR(255) é recomendado para armazenar hashes de senha
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ); 

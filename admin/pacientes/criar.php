@@ -2,6 +2,7 @@
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 use ConectaConsulta\Services\PacienteServico;
+use PDOException;
 
 $pacienteServico = new PacienteServico();
 $erro = null;
@@ -19,6 +20,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($pacienteServico->criar($dados)) {
             header('Location: index.php');
             exit;
+        }
+    } catch (PDOException $e) {
+        if ($e->getCode() === '23000') {
+            $erro = 'Erro: CPF já cadastrado.';
+        } else {
+            $erro = 'Ocorreu um erro ao salvar o paciente.';
         }
     } catch (\Exception $e) {
         $erro = $e->getMessage();
