@@ -22,9 +22,7 @@ $titulo = "Painel Administrativo";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $titulo; ?> - ConectaConsulta Admin</title>
-    <!-- Link para o arquivo CSS principal (ajuste o caminho se necessário) -->
     <link rel="stylesheet" href="../style.css"> 
-    <!-- Opcional: Estilos específicos para o painel -->
     <style>
         /* Estilos específicos se necessário */
         .admin-dashboard {
@@ -70,7 +68,7 @@ $titulo = "Painel Administrativo";
         <div class="container index">
             <div class="header-content">
                 <div class="logo">
-                    <h1><a href="../"><img src="../imagens/logotipo.png" alt=""></a></h1> <!-- Ajustado caminho da logo -->
+                    <h1><a href="../"><img src="../imagens/logotipo.png" alt=""></a></h1> 
                 </div>
                 <nav class="main-nav">
                     <ul>
@@ -78,7 +76,7 @@ $titulo = "Painel Administrativo";
                         <li><a href="medicos"><i class="fas fa-user-md"></i> Médicos</a></li>
                         <li><a href="consultas"><i class="fas fa-calendar-check"></i> Consultas</a></li>
                         <li><a href="exames"><i class="fas fa-notes-medical"></i> Exames</a></li>
-                        <!-- Link para Sair (Logout) - Implementar depois -->
+                        
                         <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
                     </ul>
                 </nav>
@@ -92,7 +90,7 @@ $titulo = "Painel Administrativo";
             <p class="welcome-message">Bem-vindo à área administrativa do ConectaConsulta.</p>
 
             <div class="admin-sections">
-                <!-- Cartões para as seções administrativas -->
+                
                 <a href="pacientes/index.php" class="section-card">
                     <i class="fas fa-users"></i>
                     <h3>Gerenciar Pacientes</h3>
