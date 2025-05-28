@@ -1116,7 +1116,7 @@ footer {
 .container form.formulario label {
     font-weight: 500;
     color: var(--text-color);
-    margin-bottom: 0.2rem; /* Espaço menor após o label */
+    margin-bottom: 0.2rem; 
 }
 
 .container form.formulario input,
@@ -1161,3 +1161,41 @@ footer {
     background-color: var(--secondary-color);
 } 
 
+ /* Página login - principal da área administrativa */
+
+ .admin-dashboard {
+            padding: 2rem;
+        }
+        .welcome-message {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .admin-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .section-card {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            text-decoration: none; 
+            color: #333; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .section-card i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #007bff; 
+        }
+        .section-card h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }

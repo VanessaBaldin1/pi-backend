@@ -23,45 +23,6 @@ $titulo = "Painel Administrativo";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $titulo; ?> - ConectaConsulta Admin</title>
     <link rel="stylesheet" href="../style.css"> 
-    <style>
-        /* Estilos específicos se necessário */
-        .admin-dashboard {
-            padding: 2rem;
-        }
-        .welcome-message {
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-            color: #333;
-        }
-        .admin-sections {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-        }
-        .section-card {
-            background-color: #fff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            text-decoration: none; /* Remover sublinhado de links */
-            color: #333; /* Cor do texto */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .section-card:hover {
-            transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        }
-        .section-card i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #007bff; /* Cor do ícone */
-        }
-        .section-card h3 {
-            margin: 0;
-            font-size: 1.1rem;
-        }
-    </style>
 </head>
 <body>
     <header class="main-header">
