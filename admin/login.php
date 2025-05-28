@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
            
 
         } catch (\Exception $e) {
-            // Capturar outras exceções gerais durante o login
+            // Captura outras exceções gerais durante o login
             $erro = 'Ocorreu um erro inesperado durante o login: ' . $e->getMessage();
             
         }
@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <button type="submit" class="btn btn-primary">Entrar</button>
         </form>
-        
+
         <p style="margin-top: 1rem;">Não tem uma conta? <a href="register.php">Cadastre-se aqui</a></p>
     </div>
 </body>
