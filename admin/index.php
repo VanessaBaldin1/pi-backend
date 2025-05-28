@@ -1,16 +1,13 @@
 <?php
-// Página principal da área administrativa
 
-// Iniciar a sessão
-session_start(); // Descomentado
+session_start(); // Iniciar a sessão
 
-// Incluir autoload do Composer
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // Lógica de verificação de sessão/login
 if (!isset($_SESSION['admin_logado'])) {
     header('Location: login.php'); // Redirecionar para login se não estiver logado
-    exit; // Importante sair para parar a execução do script
+    exit; 
 }
 
 $titulo = "Painel Administrativo";
@@ -91,7 +88,7 @@ $titulo = "Painel Administrativo";
                         <li><a href="exames">Exames</a></li>
                     </ul>
                 </div>
-                <!-- Adicionar informações de contato ou outros links do admin se necessário -->
+               
                  <div class="footer-contact">
                     <h4>Suporte Admin</h4>
                     <p><i class="fas fa-envelope"></i> admin@conectaconsulta.com</p>
